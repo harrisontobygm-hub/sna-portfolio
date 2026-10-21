@@ -17,6 +17,8 @@
       --mist: #eef6fd;
       --sky: #2ea8ee;
       --sky-soft: #cfe7fa;
+      --panel: #d9ecfc;
+      --panel-edge: #5fb8f0;
       --navy: #13284a;
       --navy-soft: #4a5d7d;
       --red: #d9443a;
@@ -80,7 +82,8 @@
 
     .stage {
       margin-top: 16px;
-      background: var(--mist);
+      background: var(--panel);
+      border: 1.5px solid var(--panel-edge);
       border-radius: 28px;
       padding: clamp(12px, 3vw, 32px);
       display: flex;
@@ -98,12 +101,6 @@
     .covers figure { flex: 1 1 220px; max-width: 300px; }
     .covers video { width: 100%; aspect-ratio: 4 / 5; }
 
-    footer {
-      padding: 40px 0 32px;
-      text-align: center;
-      color: var(--navy-soft);
-      font-size: 0.95rem;
-    }
 
     @media (max-width: 560px) {
       header { padding: 28px 0 12px; }
@@ -123,7 +120,7 @@
     </div>
   </header>
 
-  <main>
+  <main style="padding-bottom: 48px">
     <section class="wrap" aria-labelledby="venue">
       <h2 id="venue">Venue announcement</h2>
       <p class="intro">A sample announcement video for the 2027 conference in Nashville, generated 100% with AI, including the music and text animations.</p>
@@ -167,9 +164,6 @@
     </section>
   </main>
 
-  <footer class="wrap">
-    <p>Made by Final Cut AI</p>
-  </footer>
 
   <script>
     // respect reduced motion: don't autoplay the looping covers
