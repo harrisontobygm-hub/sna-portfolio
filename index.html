@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SNA Portfolio · Final Cut AI</title>
+  <title>SNA Sample Gallery · Final Cut AI</title>
   <meta name="description" content="Sample AI video work for the Sports Nutrition Association, presented by Final Cut AI." />
-  <meta property="og:title" content="SNA Portfolio" />
+  <meta property="og:title" content="SNA Sample Gallery" />
   <meta property="og:description" content="Sample AI video work for the Sports Nutrition Association, presented by Final Cut AI." />
   <meta property="og:image" content="media/poster-nashville.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,10 +38,10 @@
     /* header: the logo and title sit on a pale sky field that fades into white */
     header {
       background: linear-gradient(180deg, var(--mist) 0%, var(--mist) 62%, var(--white) 100%);
-      padding: 72px 0 56px;
+      padding: 40px 0 20px;
       text-align: center;
     }
-    header img { width: 220px; height: auto; display: block; margin: 0 auto 36px; }
+    header img { width: 220px; height: auto; display: block; margin: 0 auto 20px; }
     h1 {
       font-weight: 700;
       font-size: clamp(2.6rem, 6vw, 4.2rem);
@@ -58,11 +58,11 @@
     .tracer {
       width: 72px; height: 4px; border-radius: 2px;
       background: var(--red);
-      margin: 28px auto 0;
+      margin: 18px auto 0;
     }
 
     /* each example: short heading + one intro line, then its stage */
-    section { padding: 72px 0 24px; }
+    section { padding: 36px 0 0; }
     section h2 {
       font-weight: 600;
       font-size: clamp(1.5rem, 3vw, 1.9rem);
@@ -72,17 +72,17 @@
     }
     section p.intro {
       max-width: 34em;
-      margin: 12px auto 0;
+      margin: 6px auto 0;
       text-align: center;
       color: var(--navy-soft);
       font-size: 1.02rem;
     }
 
     .stage {
-      margin-top: 32px;
+      margin-top: 16px;
       background: var(--mist);
       border-radius: 28px;
-      padding: clamp(20px, 4vw, 44px);
+      padding: clamp(12px, 3vw, 32px);
       display: flex;
       justify-content: center;
       gap: clamp(14px, 2.4vw, 28px);
@@ -97,26 +97,18 @@
     .covers { flex-wrap: wrap; }
     .covers figure { flex: 1 1 220px; max-width: 300px; }
     .covers video { width: 100%; aspect-ratio: 4 / 5; }
-    .covers figcaption {
-      margin-top: 10px;
-      text-align: center;
-      font-size: 0.92rem;
-      font-weight: 500;
-      color: var(--navy-soft);
-    }
 
     footer {
-      padding: 72px 0 64px;
+      padding: 40px 0 32px;
       text-align: center;
       color: var(--navy-soft);
       font-size: 0.95rem;
     }
-    footer a { font-weight: 600; color: var(--navy); text-decoration-color: var(--sky); text-underline-offset: 3px; }
 
     @media (max-width: 560px) {
-      header { padding: 52px 0 40px; }
-      header img { width: 170px; margin-bottom: 28px; }
-      section { padding-top: 56px; }
+      header { padding: 28px 0 12px; }
+      header img { width: 150px; margin-bottom: 14px; }
+      section { padding-top: 28px; }
       .stage { border-radius: 20px; }
     }
   </style>
@@ -125,7 +117,7 @@
   <header>
     <div class="wrap">
       <img src="media/sna-logo.png" alt="Sports Nutrition Association" width="640" height="449" />
-      <h1>SNA portfolio</h1>
+      <h1>Sample Gallery</h1>
       <p class="presented">Presented by <strong>Final Cut AI</strong></p>
       <div class="tracer" aria-hidden="true"></div>
     </div>
@@ -150,19 +142,16 @@
           <video autoplay muted loop playsinline preload="metadata" poster="media/poster-muscle.jpg" aria-label="Animated cover: skeletal muscle fibres">
             <source src="media/sna-research-muscle.mp4" type="video/mp4" />
           </video>
-          <figcaption>Muscle</figcaption>
         </figure>
         <figure>
           <video autoplay muted loop playsinline preload="metadata" poster="media/poster-bone.jpg" aria-label="Animated cover: inside spongy bone">
             <source src="media/sna-research-bone.mp4" type="video/mp4" />
           </video>
-          <figcaption>Bone</figcaption>
         </figure>
         <figure>
           <video autoplay muted loop playsinline preload="metadata" poster="media/poster-cell.jpg" aria-label="Animated cover: inside a human cell">
             <source src="media/sna-research-cell.mp4" type="video/mp4" />
           </video>
-          <figcaption>Cell</figcaption>
         </figure>
       </div>
     </section>
@@ -179,7 +168,7 @@
   </main>
 
   <footer class="wrap">
-    <p>Made by <a href="https://www.instagram.com/finalcutai/">Final Cut AI</a></p>
+    <p>Made by Final Cut AI</p>
   </footer>
 
   <script>
