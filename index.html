@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SNA Portfolio · Final Cut AI</title>
+  <meta name="description" content="Sample AI video work for the Sports Nutrition Association, presented by Final Cut AI." />
+  <meta property="og:title" content="SNA Portfolio" />
+  <meta property="og:description" content="Sample AI video work for the Sports Nutrition Association, presented by Final Cut AI." />
+  <meta property="og:image" content="media/poster-nashville.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --white: #ffffff;
+      --mist: #eef6fd;
+      --sky: #2ea8ee;
+      --sky-soft: #cfe7fa;
+      --navy: #13284a;
+      --navy-soft: #4a5d7d;
+      --red: #d9443a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: "Poppins", system-ui, sans-serif;
+      color: var(--navy);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    a:focus-visible, video:focus-visible { outline: 3px solid var(--sky); outline-offset: 3px; }
+
+    .wrap { width: min(1040px, 100% - 32px); margin-inline: auto; }
+
+    /* header: the logo and title sit on a pale sky field that fades into white */
+    header {
+      background: linear-gradient(180deg, var(--mist) 0%, var(--mist) 62%, var(--white) 100%);
+      padding: 72px 0 56px;
+      text-align: center;
+    }
+    header img { width: 220px; height: auto; display: block; margin: 0 auto 36px; }
+    h1 {
+      font-weight: 700;
+      font-size: clamp(2.6rem, 6vw, 4.2rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+    .presented {
+      margin-top: 14px;
+      font-weight: 500;
+      font-size: 1.05rem;
+      color: var(--navy-soft);
+    }
+    .presented strong { font-weight: 600; color: var(--navy); }
+    .tracer {
+      width: 72px; height: 4px; border-radius: 2px;
+      background: var(--red);
+      margin: 28px auto 0;
+    }
+
+    /* each example: short heading + one intro line, then its stage */
+    section { padding: 72px 0 24px; }
+    section h2 {
+      font-weight: 600;
+      font-size: clamp(1.5rem, 3vw, 1.9rem);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      text-align: center;
+    }
+    section p.intro {
+      max-width: 34em;
+      margin: 12px auto 0;
+      text-align: center;
+      color: var(--navy-soft);
+      font-size: 1.02rem;
+    }
+
+    .stage {
+      margin-top: 32px;
+      background: var(--mist);
+      border-radius: 28px;
+      padding: clamp(20px, 4vw, 44px);
+      display: flex;
+      justify-content: center;
+      gap: clamp(14px, 2.4vw, 28px);
+    }
+    .stage video {
+      display: block;
+      background: var(--navy);
+      border-radius: 16px;
+      box-shadow: 0 18px 40px -22px rgba(19, 40, 74, 0.55);
+    }
+    .portrait video { width: min(380px, 100%); aspect-ratio: 9 / 16; }
+    .covers { flex-wrap: wrap; }
+    .covers figure { flex: 1 1 220px; max-width: 300px; }
+    .covers video { width: 100%; aspect-ratio: 4 / 5; }
+    .covers figcaption {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--navy-soft);
+    }
+
+    footer {
+      padding: 72px 0 64px;
+      text-align: center;
+      color: var(--navy-soft);
+      font-size: 0.95rem;
+    }
+    footer a { font-weight: 600; color: var(--navy); text-decoration-color: var(--sky); text-underline-offset: 3px; }
+
+    @media (max-width: 560px) {
+      header { padding: 52px 0 40px; }
+      header img { width: 170px; margin-bottom: 28px; }
+      section { padding-top: 56px; }
+      .stage { border-radius: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <img src="media/sna-logo.png" alt="Sports Nutrition Association" width="640" height="449" />
+      <h1>SNA portfolio</h1>
+      <p class="presented">Presented by <strong>Final Cut AI</strong></p>
+      <div class="tracer" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap" aria-labelledby="venue">
+      <h2 id="venue">Venue announcement</h2>
+      <p class="intro">A sample announcement video for the 2027 conference in Nashville, generated 100% with AI, including the music and text animations.</p>
+      <div class="stage portrait">
+        <video controls playsinline preload="metadata" poster="media/poster-nashville.jpg">
+          <source src="media/sna-nashville-announcement.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <section class="wrap" aria-labelledby="covers">
+      <h2 id="covers">Research carousel covers</h2>
+      <p class="intro">Sample covers for This Week in Sport Nutrition Research, using AI video animation behind the familiar cover text.</p>
+      <div class="stage covers">
+        <figure>
+          <video autoplay muted loop playsinline preload="metadata" poster="media/poster-muscle.jpg" aria-label="Animated cover: skeletal muscle fibres">
+            <source src="media/sna-research-muscle.mp4" type="video/mp4" />
+          </video>
+          <figcaption>Muscle</figcaption>
+        </figure>
+        <figure>
+          <video autoplay muted loop playsinline preload="metadata" poster="media/poster-bone.jpg" aria-label="Animated cover: inside spongy bone">
+            <source src="media/sna-research-bone.mp4" type="video/mp4" />
+          </video>
+          <figcaption>Bone</figcaption>
+        </figure>
+        <figure>
+          <video autoplay muted loop playsinline preload="metadata" poster="media/poster-cell.jpg" aria-label="Animated cover: inside a human cell">
+            <source src="media/sna-research-cell.mp4" type="video/mp4" />
+          </video>
+          <figcaption>Cell</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="wrap" aria-labelledby="speaker">
+      <h2 id="speaker">Speaker clips</h2>
+      <p class="intro">AI animation overlaid on conference footage to increase visual impact. The red tracer reacts to the speaker's voice.</p>
+      <div class="stage portrait">
+        <video controls playsinline preload="metadata" poster="media/poster-speaker.jpg">
+          <source src="media/sna-speaker-trexler.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>Made by <a href="https://www.instagram.com/finalcutai/">Final Cut AI</a></p>
+  </footer>
+
+  <script>
+    // respect reduced motion: don't autoplay the looping covers
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.querySelectorAll("video[autoplay]").forEach(v => { v.removeAttribute("autoplay"); v.pause(); v.controls = true; });
+    }
+  </script>
+</body>
+</html>
